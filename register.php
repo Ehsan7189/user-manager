@@ -158,12 +158,20 @@
 				<path d='M7.5 5.6 9 3l1.5 2.6L13 7l-2.5 1.4L9 11 7.5 8.4 5 7l2.5-1.4zM18 9l1 1.8L21 12l-2 1.2L18 15l-1-1.8L15 12l2-1.2L18 9zM10.5 12.9 3 20.4 4.6 22l7.5-7.5-1.6-1.6z'/>
 			</svg>
 		</div>
-		<h1>Sign in without a password</h1>
+		<h1>Registration form</h1>
 		<p class='sub'>Enter your email and we&rsquo;ll send you a one-time magic link. No password to remember, nothing
 			to reset.</p>
-		<form onsubmit="event.preventDefault();document.getElementById('sentTo').textContent=document.getElementById('email').value;document.getElementById('card').classList.add('sent')">
-			<label for='email' style='display:none'>Email</label>
-			<input type='email' id='email' placeholder='you@example.com' autocomplete='email' required>
+		<form action="" method="POST">
+			<label for='email' style='display:none'>Email</label><br>
+			<input type='email' id='email' placeholder='you@example.com' autocomplete='email' required><br>
+			<label for='email' style='display:none'>Email</label><br>
+			<input type='email' id='email' placeholder='you@example.com' autocomplete='email' required><br>
+			<label for='email' style='display:none'>Email</label><br>
+			<input type='email' id='email' placeholder='you@example.com' autocomplete='email' required><br>
+			<label for='email' style='display:none'>Email</label><br>
+			<input type='email' id='email' placeholder='you@example.com' autocomplete='email' required><br>
+			<label for='email' style='display:none'>Email</label><br>
+			<input type='email' id='email' placeholder='you@example.com' autocomplete='email' required><br>
 			<button type='submit'>Email me a magic link</button>
 		</form>
 		<p class='hint'>Prefer a password? <a href='#'>Use classic login</a></p>
