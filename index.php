@@ -18,7 +18,7 @@
 			<ul>
 				<li><a href='#hero' class='active'>Home</a></li>
 				<li><a href='#about'>Login</a></li>
-				<li><a href='#services'>Register</a></li>
+				<li><a href='register.php'>Register</a></li>
 				<li><a href='#portfolio'>Portfolio</a></li>
 				<li><a href='#team'>Team</a></li>
 				<li><a href='#pricing'>Pricing</a></li>
