@@ -159,19 +159,21 @@
 			</svg>
 		</div>
 		<h1>Registration form</h1>
-		<p class='sub'>Enter your email and we&rsquo;ll send you a one-time magic link. No password to remember, nothing
-			to reset.</p>
+		<p class='sub'>Please enter asked information for using all of our services</p>
 		<form action="" method="POST">
-			<label for='email' style='display:none'>Email</label><br>
-			<input type='email' id='email' placeholder='you@example.com' autocomplete='email' required><br>
-			<label for='email' style='display:none'>Email</label><br>
-			<input type='email' id='email' placeholder='you@example.com' autocomplete='email' required><br>
-			<label for='email' style='display:none'>Email</label><br>
-			<input type='email' id='email' placeholder='you@example.com' autocomplete='email' required><br>
-			<label for='email' style='display:none'>Email</label><br>
-			<input type='email' id='email' placeholder='you@example.com' autocomplete='email' required><br>
-			<label for='email' style='display:none'>Email</label><br>
-			<input type='email' id='email' placeholder='you@example.com' autocomplete='email' required><br>
+<!--			user name-->
+			<label for='username' >User name</label><br>
+			<input name="username" type='text' id='username' placeholder='Ehsan sayyadi'  required><br>
+<!--			email-->
+			<label for='email' >Email</label><br>
+			<input type='email' name="email" id='email' placeholder='you@example.com'  required><br>
+<!--			password-->
+			<label for='password' >password</label><br>
+			<input type='password' name="password" id='password' placeholder='12345678'  required><br>
+<!--			confirm pass-->
+			<label for='confirm-password' >Confirm your password</label><br>
+			<input type='email' name="confirm-password" id='confirm-password' placeholder='12345678'  required><br>
+
 			<button type='submit'>Email me a magic link</button>
 		</form>
 		<p class='hint'>Prefer a password? <a href='#'>Use classic login</a></p>
