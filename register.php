@@ -1,6 +1,18 @@
 <?php
+include_once "db.php";
 $massage = "";
-if($_SERVER["REQUEST_METHOD"] == "POST"){
+if($_SERVER["REQUEST_METHOD"] === "POST"){
+	$username = $_POST['username'];
+	$password = $_POST['password'];
+	$email = $_POST['email'];
+	$confirm_password = $_POST['confirm-password'];
+
+	if ($password === $confirm_password) {
+		$password = password_hash($password, PASSWORD_DEFAULT);
+		$insertQuery = "INSERT INTO users (username, password, email) VALUES ('$username', '$password', '$email')";
+
+		if (mysqli_query($conn, $insertQuery)) {}
+	}
 
 }
 
