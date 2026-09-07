@@ -162,8 +162,10 @@
 		<p class='sub'>Enter your email and we&rsquo;ll send you a one-time magic link. No password to remember, nothing
 			to reset.</p>
 		<form onsubmit="event.preventDefault();document.getElementById('sentTo').textContent=document.getElementById('email').value;document.getElementById('card').classList.add('sent')">
-			<label for='email' style='display:none'>Email</label>
-			<input type='email' id='email' placeholder='you@example.com' autocomplete='email' required>
+			<label for='username'>User name</label><br><br>
+			<input type='text' id='username' placeholder='ehsan sayyadi' name="username"  required><br><br>
+			<label for='password'>Password</label><br><br>
+			<input type='password' id='password' placeholder='12345678' autocomplete='email' required><br><br>
 			<button type='submit'>Email me a magic link</button>
 		</form>
 		<p class='hint'>Prefer a password? <a href='#'>Use classic login</a></p>
