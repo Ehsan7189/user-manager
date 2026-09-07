@@ -11,7 +11,13 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
 		$password = password_hash($password, PASSWORD_DEFAULT);
 		$insertQuery = "INSERT INTO users (username, password, email) VALUES ('$username', '$password', '$email')";
 
-		if (mysqli_query($conn, $insertQuery)) {}
+		if (mysqli_query($conn, $insertQuery)) {
+			echo "New record created successfully";
+		}else{
+			echo "something went wrong , try again later";
+		}
+	}else{
+		echo "passwords do not match";
 	}
 
 }
