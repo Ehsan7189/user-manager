@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
+
+
 	<meta charset='UTF-8'>
 	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 	<title>Magic Link Login — uiCookies</title>
@@ -162,17 +164,17 @@
 		<p class='sub'>Please enter asked information for using all of our services</p>
 		<form action="" method="POST">
 <!--			user name-->
-			<label for='username' >User name</label><br>
-			<input name="username" type='text' id='username' placeholder='Ehsan sayyadi'  required><br>
+			<label for='username' >User name</label><br><br>
+			<input name="username" type='text' id='username' placeholder='Ehsan sayyadi'  required><br><br>
 <!--			email-->
-			<label for='email' >Email</label><br>
-			<input type='email' name="email" id='email' placeholder='you@example.com'  required><br>
+			<label for='email' >Email</label><br><br>
+			<input type='email' name="email" id='email' placeholder='you@example.com'  required><br><br>
 <!--			password-->
-			<label for='password' >password</label><br>
-			<input type='password' name="password" id='password' placeholder='12345678'  required><br>
+			<label for='password' >password</label><br><br>
+			<input type='password' name="password" id='password' placeholder='12345678'  required><br><br>
 <!--			confirm pass-->
-			<label for='confirm-password' >Confirm your password</label><br>
-			<input type='email' name="confirm-password" id='confirm-password' placeholder='12345678'  required><br>
+			<label for='confirm-password' >Confirm your password</label><br><br>
+			<input type='email' name="confirm-password" id='confirm-password' placeholder='12345678'  required><br><br>
 
 			<button type='submit'>Email me a magic link</button>
 		</form>
