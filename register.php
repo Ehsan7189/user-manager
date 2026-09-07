@@ -1,3 +1,16 @@
+<?php
+$massage = "";
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+
+}
+
+
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang='en'>
 <head>
@@ -160,9 +173,11 @@
 				<path d='M7.5 5.6 9 3l1.5 2.6L13 7l-2.5 1.4L9 11 7.5 8.4 5 7l2.5-1.4zM18 9l1 1.8L21 12l-2 1.2L18 15l-1-1.8L15 12l2-1.2L18 9zM10.5 12.9 3 20.4 4.6 22l7.5-7.5-1.6-1.6z'/>
 			</svg>
 		</div>
+
 		<h1>Registration form</h1>
+		<h1><?php echo $massage;?></h1>
 		<p class='sub'>Please enter asked information for using all of our services</p>
-		<form action="" method="POST">
+		<form method="POST">
 <!--			user name-->
 			<label for='username' >User name</label><br><br>
 			<input name="username" type='text' id='username' placeholder='Ehsan sayyadi'  required><br><br>
@@ -174,7 +189,7 @@
 			<input type='password' name="password" id='password' placeholder='12345678'  required><br><br>
 <!--			confirm pass-->
 			<label for='confirm-password' >Confirm your password</label><br><br>
-			<input type='email' name="confirm-password" id='confirm-password' placeholder='12345678'  required><br><br>
+			<input type='password' name="confirm-password" id='confirm-password' placeholder='12345678'  required><br><br>
 
 			<button type='submit'>Email me a magic link</button>
 		</form>
